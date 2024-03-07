@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hani Web Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        #main-title {
+            margin: 0;
+            font-weight: normal;
+            font-size: 60px;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #tabs {
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .tab {
+            background: none;
+            border: none;
+            width: 170px;
+            font-size: 20px;
+            height: 60px;
+            transition: all 1s;
+        }
+
+        .tab:hover {
+            border: 1px solid white;
+        }
+
+        .active-tab {
+            background-color: white;
+            color: black;
+        }
+
+        .tab-content {
+            padding: 30px;
+            display: none;
+        }
+
+        .section-title {
+            color: var(--primary-bright);
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .image-with-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id='navbar-title'>
+            Hanitage
+        </div>
+
+        <div id="navbar-items">
+            <a href="home.html">Home</a>
+            <a href="#" class="active-navbar-item">Info</a>
+            <a href="dictionary.html">Dictionary</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <h1 id="main-title">
+        All About Hani
+    </h1>
+
+    <div id="tabs">
+        <button id='architecture-tab' class="tab active-tab" onclick="changeTab('architecture')">Architecture</button>
+        <button id='clothing-tab' class="tab" onclick="changeTab('clothing')">Clothing</button>
+        <button id='diet-tab' class="tab" onclick="changeTab('diet')">Diet</button>
+        <button id='religion-tab' class="tab" onclick="changeTab('religion')">Religion</button>
+        <button id='tradition-tab' class="tab" onclick="changeTab('tradition')">Tradition</button>
+        <button id='festivals-tab' class="tab" onclick="changeTab('festivals')">Festivals</button>
+    </div>
+
+    <!-- ARCHITECTURE -->
+
+    <div id='architecture' class='tab-content' style="display: block;">
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Hani Architecture-Mushroom houses in fairyland</div>
+                <p>
+                    Hani villages are normally located around lush forests and jungle so that they have abundant water for their fertile terraced fields or valley floor fields.
+                    Among all the buildings, the MUSHROOM HOUSE is the most representative of Hani architecture.
+                    </p>
+            </div>
+            <img src="../static/images/info/architecture/1-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/architecture/1-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+        
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Origin</div>
+                <p>                
+                    According to legend, the Hani had been living in caves at an earlier time. After their relocation to a place named Reluo, they discovered an immense field of mushrooms in the mountains and on the plains. The mushrooms have the capacity to resist winds and rains, as well as ants and worms building nests beneath them. The Hani have continued to imitate mushrooms and build mushroom houses ever since.
+                </p>
+            </div>
+            <img src="../static/images/info/architecture/2-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/architecture/2-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Structure</div>
+                <p>                
+                    The mushroom-shaped house consists of bamboo and wood scaffolding and a straw roof (the roof has four sloping sides). The architectural design of the two-or three-floor mushroom house is very special and charming.
+                </p>
+                <p>
+                    The bottom ground floor of the house is for keeping livestock and furniture. People live on the first floor. It normally has 3 rooms. A square shaped fireplace in the middle room has a fire that is kept constantly burning.
+                </p>
+                <p>
+                    The second floor is covered with fireproof earth and is used as a warehouse.
+                </p>
+                <p>
+                    The earth roof insulates the house so that it is warm in winter and cool in summer.
+                </p>
+            </div>
+            <div>
+                <img src="../static/images/info/architecture/3-1.jpg" style="width: 80%; margin: 30px;">
+                <div style="display: flex;">
+                    <img src="../static/images/info/architecture/3-2.jpg" style="width: 50%; padding-left: 20px;">
+                    <img src="../static/images/info/architecture/3-3.jpg" style="width: 50%; padding-left: 20px;">
+                </div>
+            </div>
+        </div>
+        
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Difficulties Faced in Reservation</div>
+                <p>                
+                    Since the mushroom house is an important cultural symbol of the Hani ethnic group, people try hard to protect them form being demolished and forgotten.However, is is extremely hard.
+                </p>
+                <p>
+                    Nowadays, people no longer build houses with stone or brick walls and thatched roofs. Instead, they follow modern architecture and have added modern furniture to their homes.Mushroom houses were considered outdated and poor. The traditional central pillar has also been replaced with a wooden pillar in the corner.
+                </p>
+                <p>
+                    There are several REASONS: 
+1.	The old adobe and wood buildings are deteriorating and pose a danger. 
+2.	There is a scarcity of wood for construction.
+3.	Younger generations prefer modern, well-lit, clean, and secure homes instead of the traditional, cramped, and damp shelters.
+                </p>
+                <p>
+                    It is quite obvious that the cultural symbols represented by mushroom houses have become disconnected from the lives of the people living in them.
+                </p>
+            </div>
+            <img src="../static/images/info/architecture/4-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/architecture/4-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">What next?</div>
+                <p>
+                    Traditional architecture should be appreciated for its ethical values and cultural importance. When confronted with social transformations, these dwellings must redefine their purpose and adjust accordingly. When restoring traditional buildings, it is crucial to honor local traditions, follow cultural preservation principles, support local artisans, and safeguard the historical knowledge and customs linked to these cultural artifacts and structures.
+                </p>
+            </div>
+        </div>
+
+        <div style="display: flex">
+            <img src="../static/images/info/architecture/5-1.jpg" style="width: 50%; padding-left: 30px;">
+            <img src="../static/images/info/architecture/5-2.jpg" style="width: 50%; padding-left: 20px;">
+        </div>
+    </div>
+
+    <!-- CLOTHING -->
+
+    <div id='clothing' class='tab-content'>
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Hani Clothing</div>
+                <p>
+                    As a way to pass on history, emotion and myths, Hanis decorated clothes with special symbols, images, patterns and colors.
+                </p>
+            </div>
+            <img src="../static/images/info/clothing/1-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/clothing/1-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+        
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">The Legend of the Holy Black</div>
+                <p>                
+                    According to the ancient legend,the Hani preferred to wear light-colored clothes in the past. Until one day, a mother and her daughter climbed up the mountain to collect medicine.On the way,they encountered a ghost who came out to find food.
+                </p>
+                <p>
+                    Both of them were frightened and tended to flee.During the time,their clothes were dyed blue and purple by wild indigo leaves.
+                </p>
+                <p>
+                    Unexpectedly, this became their protective color, and the ghost could not see them no matter how close they were, and eventually they survived.
+                </p>
+                <p>
+                    Since then,Hani consider black as an auspicious , holy and protective color .In addition,the color black plays a significant role in Hani clothing.
+                </p>
+            </div>
+        
+                <img src="../static/images/info/clothing/2-1.jpg" style="width: 30%; padding-left: 30px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Dyeing</div>
+                <p>
+                    For Hani people living in Yuanjiang County, Yuxi City in Yunnan, natural plant dyeing is a tradition preserved and passed on for generations. Hani women most often use Strobilanthes cusia, commonly seen in the field and on the mountain, for indigo dye.
+                </p>
+                <p>
+                    Since this type of plant, called “Banlangen”,has characteristics such as insect repellent, anti-inflammatory, and disease treatment, Hani people process and dye it into clothing, and wear it on their bodies to resist the invasion of pests and bacteria, in order to maintain their physical health.
+                </p>
+            </div>
+                <img src="../static/images/info/clothing/3-1.jpg" style="width: 30%; padding-left: 30px;">
+                <img src="../static/images/info/clothing/3-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Aging with the Clothes</div>
+                <p>
+                    Hani clothing for children, young adults, elderly folk varies a lot.
+                </p>
+                <p>
+                    The previous six-year-old baby and children clothes basically no gender distinction, boys and girls are wearing from woven cloth round cap crowns pig teeth, seashells, tiger leopard claw, pangolin scales, shells and other objects.The boys usually wear black, no jewelry,while girls' clothes with some silver bubble, the color ear ornaments. 
+                </p>
+                <p>
+                    Increase with age, after the age of 15, men and women have to change clothes design, will also increase the body ornaments, the men switched to black cloth scarf wrapped around the head, the woman to wear the studded silver medal cloth, Hani men and women dress this gorgeous accessories has been extended to marriage, birth parents, they would gradually become less bright ornaments. 
+                </p>
+                <p>
+                    To 45 years after the man’s silver chain, silver bubble, removed from the clothes, ready to future generations, cylinder woman to remove the cap, hat, pectoral no longer wear, wearing a plain black blue skirt to make themselves appear to be simple and elegant, dignified.
+                </p>
+                <p>
+                    For the farmers and residents in the highlands, heavy and durable clothes that keep them warm and comfortable in their dirty environment have obvious advantages. 
+Traditionally, the Hani did not wear shoes and socks. They wore special wooden shoes that provided good traction in mud. These were used for walking in muddy rice paddies.
+                </p>
+            </div>
+            <div style="padding-left: 20px;">
+                <img src="../static/images/info/clothing/4-1.jpg" style="height: 150px; margin-top: 30px">
+                <img src="../static/images/info/clothing/4-2.jpg" style="height: 150px; margin-top: 30px">
+                <img src="../static/images/info/clothing/4-3.jpg" style="height: 150px; margin-top: 30px">
+            </div>
+        </div>
+        
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Hani Women Headresses</div>
+                <p>                
+                    The famous foot-high conical headdresses worn by Hani women are called u-coes. They are made from cotton, and embroidered and decorated with colored beads, silver balls, strands of colored wool, shells, long red boas, tassels, bird feathers, silver coins and bells. 
+                </p>
+                <p>
+                    The clothing, hairstyles and headdresses worn by women often indicates their age group, marital status and the Hani branch or family grouping she belongs to. A great difference exists among the clothes of women of different branches of the Hani.
+                </p>
+                <p>
+                    The clothing, hairstyles and headdresses worn by women often indicates their age group, marital status and the Hani branch or family grouping she belongs to. A great difference exists among the clothes of women of different branches of the Hani.
+                </p>
+            </div>
+        
+            <img src="../static/images/info/clothing/5-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/clothing/5-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <p>
+                    Hani clothing has different styles and distinctions in different age stages, activity venues, and identity status. It is a significant symbol of identifying the age and social status of the wearer, and is also a product of labor and wisdom under agricultural civilization.
+                </p>
+            </div>
+        </div>
+
+        <div style="display: flex">
+            
+        </div>
+    </div>
+
+    <!-- DIET -->
+
+    <div id='diet' class='tab-content'>
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">The Hani Diet Style</div>
+                <p>                
+                    The Hani ethnic group is hospitable and friendly.They warmly welcome guests whenever they come, whether they are new acquaintances or old friends. We often entertain guests with homemade braised pot wine and Hani style dishes. This seemingly crude dish has the unique flavor of mountain ethnic cuisine.
+                </p>
+                <p>
+                    Their staple foods are rice and corn. Sour and spicy are their favorite tastes. They may pick wild vegetables to make soup, and they use herbs as condiments.
+                </p>
+            </div>
+        
+            <img src="../static/images/info/diet/1-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/diet/1-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Smoking</div>
+                <p>                
+                    Both Hani men and women generally smoke. Heated wine and teas are their favorite drinks. Chewing areca is also popular among the Hani People.
+                </p>
+            </div>
+        
+            <img src="../static/images/info/diet/2-1.jpg" style="width: 30%; padding-left: 30px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Pu'er Tea</div>
+                <p>                
+                    It is believed that the Hani were among the first people in Yunnan to produce a costly, delicious kind of "black tea" or post-fermented tea called Pu'er (普洱茶 pu'er chá).
+                </p>
+                <p>
+                    Many Hani villages specialize in growing mainly Pu'er tea, and they love drinking Pu'er. It is a cash crop for them as well as a welcome relaxation in the evening. It is one of China's most famed medicinal drinks.
+                </p>
+            </div>
+        
+            <img src="../static/images/info/diet/3-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/diet/3-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container" style="flex-wrap: wrap; justify-content: space-around;">
+            <div class="section-title">Classical Hani Cuisine</div>
+            <div style="margin: 20px">
+                <img src="../static/images/info/diet/4-1.jpg" style="width: 200px;">
+                <div>Blood Sausage 血肠</div>
+            </div>
+            <div style="margin: 20px">
+                <img src="../static/images/info/diet/4-2.jpg" style="width: 200px;">
+                <div>Baiwang 白旺</div>
+            </div>
+            <div style="margin: 20px">
+                <img src="../static/images/info/diet/4-3.jpg" style="width: 200px;">
+                <div>Tofu balls豆腐圆子</div>
+            </div>
+            <div style="margin: 20px">
+                <img src="../static/images/info/diet/4-4.jpg" style="width: 200px;">
+                <div>Dyed glutinous rice染糯米</div>
+            </div>
+            <div style="margin: 20px">
+                <img src="../static/images/info/diet/4-5.jpg" style="width: 200px;">
+                <div>Snail Cooked Taro Vegetable <br>螺蛳煮芋菜</div>
+            </div>
+            <div style="margin: 20px">
+                <img src="../static/images/info/diet/4-6.jpg" style="width: 200px;">
+                <div>Hani Glass Meat 哈尼玻璃肉</div>
+            </div>
+            <div style="margin: 20px">
+                <img src="../static/images/info/diet/4-7.jpg" style="width: 200px;">
+                <div>Dried Pork with Ginger <br>猪肉干巴磕姜</div>
+            </div>
+            <div>
+                <img src="../static/images/info/diet/4-8.jpg" style="width: 200px;">
+                <div>Stewed Eel 炖鳝鱼</div>
+            </div>
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Braised Pot Wine 烧酒</div>
+                <p>                
+                    The Hani ethnic group on both sides of the Red River in Yunnan province brews and drinks their own alcohol, which is called "braised pot wine". The Hani people's braised pot wine has a long history of brewing.Braised pot wine is clear and crystal clear, rich and sweet. It is an essential beverage for the Hani Mountain Stronghold Festival.
+                </p>
+            </div>
+        
+            <img src="../static/images/info/diet/5-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/diet/5-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Commentaries</div>
+                <p>                
+                    Jennifer Che writes in “Xishuangbanna: Hani Minority Food” that they've tried the Hani local coffee and traditional food. She also includes that the food are,“definitely not as strong flavors, more simple and comforting.”
+                </p>
+            </div>
+        
+            <img src="../static/images/info/diet/6-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/diet/6-2.jpg" style="width: 20%; padding-left: 20px;">
+            <img src="../static/images/info/diet/6-3.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+    </div>
+
+    <!-- RELIGION -->
+
+    <div id='religion' class='tab-content'>
+        <div class="horizontal-section-container">
+            <div>
+                <p>                
+                    The religious beliefs of the Hani ethnic group mainly include polytheistic worship and ancestor worship. They believe that there are gods such as the Heavenly God, the Earth God, the Mountain God, the Village God, and the Family God, all of which need to be regularly worshipped. 
+                </p>
+                <p>
+                    The main objects of Hani people's natural worship are :
+       mountains ⛰️            water 🏞️             trees🌲 
+sun ☀️            moon  🌛                  wind 🌪️
+            thunder ⚡                 hail ❄️               earthquakes
+
+                </p>
+            </div>
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <p>                
+                    Ancestor worshipping is another important Hani belief. Each Hani family has a very old pedigree that passes on from father down to sons. They believe that the spirits of the ancestors resides in the tombs, Momiluoke, namely the entry to the heaven or the place where the ancestral shrine is worshiped. Therefore sacrifices should be done frequently to win the favors and protection of the God and ancestors.
+                </p>
+                <p>
+                    In the 1920s, Christianity and Buddhism had spread to them, but with little influence. The person who is designated to hold the religious activities is hereditary and doctors cure patients with witchcraft and herbal medicine.
+                </p>
+                <p>
+                    The Hani people believe that a person has 12 souls, distributed throughout the body and playing different roles in the health of the human body. Only when all 12 souls fulfill their duties and attach themselves to the human body, can they be healthy and unscathed.
+                </p>
+            </div>
+            <img src="../static/images/info/religion/2-1.jpg" style="width: 30%; padding-left: 30px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Sacrificial Culture</div>
+                <p>                
+                    The practice of the primitive religious belief mainly involves agricultural production and village construction. Sacrifice to the heavens, mountains, and especially dragons are the main contents of worship.
+                </p>
+                <p>
+                    The dragon is a symbol of rain, and sacrificing the dragon is praying for rain. As is well known, the Hani people live in mountainous areas and suffer from severe water scarcity. For a nation that has entered an agricultural society, water is crucial. Under the living conditions of relying on the heavens for food, people can only seek help from the so-called dragon god in charge of rainwater, and the dragon worship ceremony arises from this.
+                </p>
+                <p>
+                    Dragon is the protective god in the hearts of the entire village, and it is the most inviolable belief, just like the Greek sun god Apollo. Therefore, the annual dragon worship is a major event held by the entire village.
+                </p>
+            </div>
+            <div>
+                <img src="../static/images/info/religion/3-1.jpg" style="padding-top: 20px;">
+                <img src="../static/images/info/religion/3-2.jpg" style="padding-top: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- TRADITION -->
+
+    <div id='tradition' class='tab-content'>
+        <div class="horizontal-section-container" style="justify-content: center;">
+            <div>
+                <p style="text-align: center;">
+                    "
+                    In a Hani's house, without a fire pond,<br>
+                    it's not like house.<br>
+                    Without bubbling tea in the fire pond, <br>
+                    it's like eating meat without salt,<br>
+                    rice fields without water, <br>
+                  a man without a wife.
+                  "
+                </p>
+            </div>
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">The Hani Tea Tradition</div>
+                <p>
+                    This is a folk song that has been passed down among the Hani ethnic group, expressing many customs in the daily lives of the Hani people vividly and picturesquely. Drinking tea is one of them.
+                </p>
+                <p>
+                    The Hani people enjoy drinking tea, and their tea culture has a long history. Planting and drinking tea is an indispensable part of their daily life.
+                </p>
+                <p>
+                    In Hani communities, people often gather together to drink tea and chat. The Hani people use a special small teapot to cook tea, called the "Maza teapot". Tea is usually brewed with mountain spring water, with a refreshing and fragrant taste.
+                </p>
+            </div>
+            <img src="../static/images/info/tradition/1-1.jpg" style="width: 30%; padding-left: 30px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">The "Recognize Your Uncle" Tradition</div>
+                <p>
+                    The mother and the young child must rise early on the day the baby is supposed to recognize his uncle. The mother cleans the baby's face, paint a black mark on the baby's forehead, and tie some garlic to the baby's headband in order to ward off evil. She'll bring food with her, including sticky rice cakes, fried stir-fried yellow beans, and steamed chicken eggs, and always offers gifts to anyone they encounter along the way, regardless of sex, age, or ethnicity.
+                </p>
+            </div>
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">the Fireplace Tradition</div>
+                <p>
+                    The Hani people used to believe that fire was the life of the family and were in awe of it; protecting the kindling permanently has became one of their responsibilities. Each family has several different fireplaces. The fireplace will never extinguish due to the protection of the Kitchen God, and no one is allowed to have any disrespectful behavior towards the fireplace.  
+                </p>
+            </div>
+            <img src="../static/images/info/tradition/3-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/tradition/3-2.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <p>
+                    Sipping and tasting a cup of tea, having chit-chat for a day long, every generation of Hani people have imparted and inherited numerous unique conventions and customs that embody their ethnicintelligence or belief.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FESTIVALS -->
+
+    <div id='festivals' class='tab-content'>
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">Traditional festivals of the Hani ethnic group— An unparalleled Calendar</div>
+                <p>
+                    Seasonal division and agricultural calendar are a major contribution of the Hani people to the human calendar. In the Ailao Mountains, the Hani people divide the whole year into three seasons: "Zaota" as the cold season, 
+"Wodu" as the warm season,
+"Re wo" as the rainy season, 
+with each season lasting four months.
+                </p>
+                <p>
+                    The seasonal division of the Hani ethnic group is based on a full understanding of the overall natural ecological environment of Ailaoshan (their hometown), which is very suitable for the specific local situation and more closely reflects and adapts to the seasonal and phased nature of Hani's agricultural ecological terrace farming. 
+                </p>
+                <p>
+                    On such a calendar that embodies Hani's national wisdom, there are numerous intriguing and meaningful festivals that worth our attention and understanding. 
+                </p>
+            </div>
+            <img src="../static/images/info/festivals/1-1.jpg" style="width: 30%; padding-left: 30px;">
+            <img src="../static/images/info/festivals/1-2.jpg" style="width: 20%; padding-left: 20px;">
+            <img src="../static/images/info/festivals/1-3.jpg" style="width: 20%; padding-left: 20px;">
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">June Year - "Ku Zha Zha"</div>
+                <p>
+                    Definition: In May and June, there is frequent rainfall, and the climate is extremely humid and hot; all the creatures are experiencing an arduous, tough and withering time.
+
+In June, the Kuzha Zha is celebrated because according to the Hani ethnic calendar, the busy season of spring plowing and planting has all come to an end. People hope that the gods will bless the growth of crops and ensure a bountiful harvest. 
+
+                </p>
+                <p>
+                    Custom: Swing is one of the most important customs of the Hani people in June. Each village needs to set up one or two large swing frames. Each village needs to cut four straight and hard trees and vines from the forest, plant wooden stakes on the larger site of the village, and tie swing ropes made of vines. 
+                </p>
+                <p>
+                    After the celebration begins, each village will kill pigs and cows, prepare a sumptuous banquet and have a meal together. Men, women, and children will gather to engage in entertainment activities mainly focused on swinging. 
+                </p>
+                <p>
+                    Fun Fact: Those brave young men who play on the swing often become the objects of admiration for girls！
+                </p>
+            </div>
+            <div>
+                <img src="../static/images/info/festivals/2-1.jpg">
+                <div style="display: flex; margin-top: 20px;">
+                    <img src="../static/images/info/festivals/2-2.jpg" style="margin-right: 20px;">
+                    <img src="../static/images/info/festivals/2-3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-section-container">
+            <div>
+                <div class="section-title">the October Year</div>
+                <p>
+                    Definition: According to the ancient calendar of the Hani ethnic group, the first day of October is the beginning of a new year (equivalent to the first day of the Chinese New Year). During the festival, every village holds a street wine feast. In October of the lunar calendar, when rice has just entered the warehouse, every household is pounding glutinous rice and making cakes, baking sweet "stuffy pot wine" and preparing for the new year.
+                </p>
+                <p>
+                    On the day of October New Year, people prepare various foods and drinks at home, and then go to the graves of their family ancestors for worship activities. In addition to offering sacrifices to ancestors, people also hold activities such as cow racing, sheep racing, archery, and dancing during this festival.
+                </p>
+                <p>
+                    Fun Fact: It's the longest festival with the most diverse activities of the Hani ethnic group in a year!
+                </p>
+            </div>
+            <div style="margin-left: 20px;">
+                <img src="../static/images/info/festivals/3-1.jpg" style="width: 200px; padding-top: 20px;">
+                <img src="../static/images/info/festivals/3-2.jpg" style="width: 200px; padding-top: 20px;">
+            </div>
+        </div>
+
+        <div class="horizontal-section-container" style="flex-wrap: wrap; justify-content: space-around;">
+            <div style="margin: 10px">
+                <img src="../static/images/info/festivals/4-1.jpg" style="width: 200px;">
+            </div>
+            <div style="margin: 10px">
+                <img src="../static/images/info/festivals/4-2.jpg" style="width: 200px;">
+            </div>
+            <div style="margin: 10px">
+                <img src="../static/images/info/festivals/4-3.jpg" style="width: 200px;">
+            </div>
+            <div style="margin: 10px">
+                <img src="../static/images/info/festivals/4-4.jpg" style="width: 200px;">
+            </div>
+            <div style="margin: 10px">
+                <img src="../static/images/info/festivals/4-5.jpg" style="width: 200px;">
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 800px;"></div>
+
+    <script src="../scripts/utils.js"></script>
+    <script>
+        var currentTab = 'architecture';
+        function changeTab(tab) {
+            $(`#${currentTab}`).css('display', 'none');
+            $(`#${tab}`).css('display', 'block');
+            $(`#${currentTab}-tab`).removeClass('active-tab');
+            $(`#${tab}-tab`).addClass('active-tab');
+            currentTab = tab;
+        }
+    </script>
+    <!--
+        FOR DEBUG PURPOSES, INCLUDE IF YOU WANT TO AUTOMATICALLY PREVIEW A SPECIFIC TAB
+         <script>
+        $(function () {
+            changeTab('festivals');
+        })
+    </script> -->
+</body>
+</html>

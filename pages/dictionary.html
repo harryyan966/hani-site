@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hani Web Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        .dictionary-input {
+            font-size: 25px;
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 10px 12px;
+            width: 80vw;
+            margin: auto;
+            outline: none;
+            border: 1px solid white;
+            transition: 0.3s;
+        }
+
+        .dictionary-input:focus {
+            border: 1px solid var(--primary-bright);
+        }
+
+        .audio-button {
+            font-size: 20px;
+            color: black;
+            background-color: var(--primary-bright);
+            border-radius: 30px;
+            text-align: center;
+            width: fit-content;
+            padding: 10px 20px;
+        }
+
+        .audio-button:hover {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id='navbar-title'>
+            Hanitage
+        </div>
+
+        <div id="navbar-items">
+            <a href="home.html'">Home</a>
+            <a href="info.html">Info</a>
+            <a href="#" class="active-navbar-item">Dictionary</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div style="height: 100px;"></div>
+    <div style="margin-left: 100px;">
+        <form id="e2h-form">
+            <input id="e2h-input" type="text" class="dictionary-input" placeholder="English to Hani">
+        </form>
+        <div style="height: 30px;"></div>
+        <div id="e2h-audio" style="display: none;" class="audio-button" onclick="">Play Audio</div>
+
+        <p id="e2h-description"></p>
+    </div>
+
+    <div style="height: 800px;"></div>
+
+    <script src="../scripts/utils.js"></script>
+    <script src="../static/dictionary/dictionary.js"></script>
+
+    <script>
+        $('#e2h-form').submit(function (event) {
+            // prevent refreshing
+            event.preventDefault();
+
+            var word = $('#e2h-input').val();
+            
+            var value = dictionary[word];
+
+            console.log(dictionary);
+            console.log(value);
+
+            if (value == undefined) {
+                $('#e2h-audio').css('display','none');
+                $('#e2h-description').text('This word will soon be documented.');
+            }
+            else {
+                $('#e2h-audio').css('display','block');
+                $('#e2h-audio').click(function() {
+                    (new Audio(`../static/dictionary/audio/${value['audio']}`)).play();
+                })
+                $('#e2h-description').text(value['description']);
+            }
+
+
+        });
+    </script>
+</body>
+</html>

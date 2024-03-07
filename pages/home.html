@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hani Web Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        .title {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #main-title {
+            height: 100vh;
+            font-size: 70px;
+        }
+
+        #secondary-title, #call-to-action {
+            height: 50vh;
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 25px;
+            padding: 20px;
+            line-height: 1.5em;
+        }
+
+        @keyframes fadeOut {
+            0%,60% {opacity: 1;}
+            100% {opacity: 0.2;}
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id='navbar-title'>
+            Hanitage
+        </div>
+
+        <div id="navbar-items">
+            <a href="#" class="active-navbar-item">Home</a>
+            <a href="info.html">Info</a>
+            <a href="dictionary.html">Dictionary</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div id='main-title' class="title">
+        <div style="animation: fadeIn 3s;">Have You Ever Stumbled Into<br><span style="color: rgb(200, 215, 59);font-weight: bold;">A Utopia?</span></div>
+    </div>
+    <img src="../static/images/home/5.jpeg" alt="mountains" style="position: absolute; z-index: -1; width: 100%; top: 0;opacity: 0.4;object-fit: cover; height: 100vh;">
+    
+    <div  class="horizontal-section-container">
+        <img src="../static/images/home/7.jpeg" alt="image 2" style="width: 45%;padding: 40px;">
+        <p>Sat in the remotest area in Yunnan Province, the town consisted of mostly Hani ethnic groups who spoke a language in a completely different linguistic structure from Chinese, and, thus, had rarely any outside visitors.</p>
+    </div>
+
+    <div  class="horizontal-section-container">
+        <p>So naturally, I imagined the life there to be somewhat backward and humdrum. But I was wrong.</p>
+        <img src="../static/images/home/4.jpeg" alt="image 2" style="width: 45%;padding: 40px;">
+    </div>
+
+    <div  class="horizontal-section-container">
+        <img src="../static/images/home/3.jpeg" alt="image 2" style="width: 45%;padding: 40px;">
+        <p>Despite its high altitude, the sky seemed just within reach as I walked along the slopes; although there were not as many people in the town, the place hummed with boundless liveliness.</p>
+    </div>
+    <div class="horizontal-section-container">
+        <p>I once spotted a swarm of elders in blue-and-purple costumes gathering in a square to dance. Upon noticing my presence, they treated me to the local specialty, the sticky rice they had brought from home.</p>
+        <img src="../static/images/home/2.jpeg" alt="image 2" style="width: 45%;padding: 40px;">
+    </div>
+
+    <div id='secondary-title' class="title">
+        <div>Have You Ever Heard Of A Culture<br><span style="color: rgb(200, 215, 59);font-weight: bold; animation: fadeOut 4s;opacity: 0.2;">Vanishing?</span></div>
+    </div>
+
+    <div  class="horizontal-section-container">
+        <p>There, I witnessed the beauty of Hani culture, a beauty slowly washed away by mainstream society.</p>
+        <img src="../static/images/home/8.jpeg" alt="image 2" style="width: 45%;padding: 40px;">
+    </div>
+
+    <div  class="horizontal-section-container">
+        <!-- test: do we put things in cdns? -->
+        <img src="../static/images/home/1.jpeg" alt="image 2" style="width: 45%;padding: 40px;">
+        <p>It was a pleasantly cool summer day; we chatted for an afternoon-long using sign language, from the local customs to the similarities between the Hani and Chinese languages. I remembered one of the elders saying regretfully that as a language without a natural script, Hani is gradually being forgotten among young generations under the popularization of Chinese… </p>
+    </div>
+
+    <div  class="horizontal-section-container">
+        <p>And as I studied the elder’s troubled face, I understood the reason she lamented the endangerment of a language though it no longer holds the capacity for effective expression. It wasn’t that capacity she was lamenting, but the richness of a custom that had been passed down from generation to generation. </p>
+        <img src="../static/images/home/9.jpeg" alt="image 2" style="width: 45%;padding: 40px;">
+    </div>
+
+    <div id="call-to-action" class="title">
+        <div>
+            Would it <span style="opacity: 0.3;">fade</span>, or<br><span style="color: rgb(200, 215, 59);font-weight: bold;">Live?</span>
+            <p>Your Actions Matter.</p>
+            <a href="info.html" class='large-button'>Learn More</a>
+        </div>
+    </div>
+
+
+    <div style="height: 800px;"></div>
+
+    <script src="../scripts/utils.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Lucida Bright';
+    src: url('fonts/lucidabright.TTF');
+}
+@font-face {
+    font-family: 'Lucida Bright';
+    font-weight: bold;
+    src: url('fonts/lucidabright-b.TTF');
+}
+@font-face {
+    font-family: 'Lucida Bright';
+    font-weight: bold;
+    font-style: italic;
+    src: url('fonts/lucidabright-bi.TTF');
+}
+@font-face {
+    font-family: 'Lucida Bright';
+    font-style: italic;
+    src: url('fonts/lucidabright-i.TTF');
+}
+
+:root {
+    --primary-bright: rgb(200, 215, 59);
+    --primary-dark: rgb(60, 64, 23);
+}
+
+* {
+    font-family: 'Lucida Bright';
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#navbar {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+#navbar.scrolled {
+    background-color: white;
+}
+
+#navbar-title {
+    font-size: 20px;
+}
+
+.scrolled > #navbar-title {
+    color: black;
+}
+
+#navbar-items > a {
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+
+.scrolled > #navbar-items > a {
+    color: black;
+}
+
+#navbar-items > .active-navbar-item {
+    background-color: var(--primary-bright);
+    color: black;
+}
+
+.scrolled > #navbar-items > .active-navbar-item {    
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+#navbar-items > a:hover {
+    border: 1px solid white;
+}
+
+.scrolled > #navbar-items > a:hover {
+    border: 1px solid black;
+}
+
+.large-button {
+    border: 3px solid var(--primary-bright);
+    padding: 10px 30px;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+.large-button:hover {
+    background-color: var(--primary-bright);
+    color: black;
+}
+
+.horizontal-section-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 50px;
+}

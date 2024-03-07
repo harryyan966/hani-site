@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hani Web Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        #main-title {
+            margin: 0;
+            font-weight: normal;
+            font-size: 60px;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #contacts {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 240px;
+        }
+
+        .contact-image {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        .sponsor-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+        }
+
+        .circular-image-container {
+            border-radius: 50%; background-color: white; width: 150px; height: 150px;display: flex;justify-content: center;align-items: center;
+        }
+
+        .section-title {
+            color: var(--primary-bright); 
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 20px;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id='navbar-title'>
+            Hanitage
+        </div>
+
+        <div id="navbar-items">
+            <a href="home.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="dictionary.html">Dictionary</a>
+            <a href="work.html">Work</a>
+            <a href="#" class="active-navbar-item">Contact</a>
+        </div>
+    </div>
+
+    <h1 id="main-title">
+        Contact Us
+    </h1>
+
+    <div id="contacts">
+        <div class="contact">
+            <img class="contact-image" src="../static/images/contact/hannah.jpg" alt="Hannah">
+            <div>Hannah</div>
+            <div>Mail: hannah033106@163.com</div>
+            <div>Tel: 13520317534</div>
+            <div>Coordinator</div>
+        </div>
+        <div class="contact">
+            <img class="contact-image" src="../static/images/contact/harry.jpg" alt="Harry">
+            <div>Harry</div>
+            <div>Mail: 18501033573@qq.com</div>
+            <div>Tel: 13621120573</div>
+            <div>Web Dev</div>
+        </div>
+    </div>
+
+    <div style="height: 100px;"></div>
+
+    <div style="color: var(--primary-bright); font-size: 40px; text-align: center;">Our Sponsors</div>
+
+    <div style="display: flex;margin: 0px 80px;">
+        <div class="sponsor-section">
+            <div class="circular-image-container">
+                <img src="../static/images/contact/青爱工程.png" alt="青爱工程" height="100px">
+            </div>
+            <p class='section-title'>北京青爱基金会</p>
+            <p>
+                北京青爱教育基金会成立于 2014 年，前身为 2006 年启动设立的中国青少年艾滋
+                病防治教育工程（简称：青爱工程），为 5A 级社会组织，拥有联合国经济和社
+                会理事会特别咨商地位。基金会致力于对青少年进行爱的教育，通过在学校和社
+                区设立青爱小屋、母爱书院，组织开展师资培训、专家讲座、校园宣讲、教学研
+                发、困境助学等公益活动，推动心理健康教育、家庭教育、母爱教育、艾滋病防
+                治、性教育、传统文化教育和公益慈善教育的开展。
+            </p>
+        </div>
+
+        <div class="sponsor-section">
+            <div class="circular-image-container">
+                <img src="../static/images/contact/非遗童盟.png" alt="非遗童盟" height="100px">
+            </div>
+            <p class='section-title'>北京青爱基金会非遗童盟基金</p>
+            <p>
+                非遗童盟基金以“传承与守护非物质文化遗产”为宗旨，用少年儿童力所能及的
+                力量传承与守护非遗的文化与精神，使代代相传的非物质文化遗产得以传承与创
+                新，通过组织少年儿童的非遗画展、文艺演出、非遗手工展、非遗写作、非遗演
+                讲、非遗游学等形式多样的活动，带动全球千万家庭走进非遗、爱上非遗、传播
+                非遗，让世界的多样化文化在少年儿童的参与中得到交融，多一份文化的理解和
+                包容，减少冲突，呼吁世界和平，携手共同守护人类共同的文化财 富。
+            </p>
+        </div>
+    </div>
+
+    <div style="height: 800px;"></div>
+
+    <script src="../scripts/utils.js"></script>
+</body>
+</html>
